@@ -22,6 +22,6 @@ from .views import (
 
 urlpatterns = [
     path('', home_page),
-    path('polls', include('polls.urls')),
+    path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
