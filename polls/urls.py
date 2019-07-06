@@ -6,7 +6,7 @@ from .views import (
     results,
     vote,
 )
-
+app_name = 'polls'
 urlpatterns = [
     path('', index, name='index'),
     # ex: /polls/5/
@@ -15,6 +15,5 @@ urlpatterns = [
     path('<int:question_id>/results/', results, name='results'),
     # ex: /polls/5/vote/
     path('<int:question_id>/vote/', vote, name='vote')
-
 
 ]
